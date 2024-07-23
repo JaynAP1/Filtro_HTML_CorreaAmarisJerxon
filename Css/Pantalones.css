@@ -1,0 +1,141 @@
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+}
+body{
+    background-color: #4670DB;
+}
+.BloqueP{
+    display: flex;
+    justify-content: space-around;
+    background-color: #4670DB;
+    height: 100vh;
+}
+.BloqueP a{
+    text-decoration: none;
+}
+.BloqueT{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    width: 10em;
+    font-size: 1.2em;
+}
+.BloqueT h3{
+    font-size: 1.7em;
+}
+.CajaV{
+    display: flex;
+    flex-direction: column;
+    line-height: 3em;
+    margin: 9em 0em 9em 0em;
+}
+.AllT,.AllA,.AllC,.AllP{
+    display: flex;
+    align-items: center;
+}
+.AllP{
+    background-color: white;
+    border-radius: 2em;
+    width: 40vw;
+}
+.AllP i{
+    color:#4670DB;
+}
+.AllP a{
+    color: #4670DB;
+}
+.All i,.AllA i,.AllT i,.AllC i,.AllP i {
+    transform: scale(1.5);
+}
+.Carrito{
+    display: flex;
+    align-items: center;
+    margin: 0 0 5em 0;
+}
+.BloqueO{
+    border-radius: 2em;
+    background-color: white;
+}
+.Title h3{
+    margin-left: 2em;
+    color:#4670DB;
+    font-size: 2em;
+}
+.AllObj{
+    background-color: rgb(255, 255, 255);
+    overflow:-moz-hidden-unscrollable;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4em;
+    width: 60vw;
+    border-radius: 2em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding: 0em 0 0 2em;
+}
+.Obj1, .Obj2, .Obj3,.Obj4,.Obj5,.Obj6,.Obj7,.Obj8,.Obj9,.Obj10,.Obj11,.Obj12,.Obj13,.Obj14,.Obj15{
+    text-align: center;
+    width: 13em;
+    border: 1px solid black;
+    border-radius: 1em;
+}
+.Info{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 1em;
+    border: 1px solid black;
+    background-color:#4670DB;
+}
+.Precio{
+    text-align: start;
+}
+.Btn{
+    margin: 2em 0 0 2em
+}
+.Info a{
+    background-color:white;
+    border-radius: 0.2em;
+    padding: 0.3em;
+    color: #4670DB;
+}
+img{
+    height: 10em;
+}
+.BloqueR{
+    position: absolute;
+    z-index: 2;
+    background-color: #4670DB;
+    display: flex;
+    flex-direction: column;
+    height: 0em;
+    line-height: 1.5em;
+    left: 1em;
+    top: 2em;
+}
+input{
+    display: none;
+}
+.BloqueR a{
+    display: none;
+}
+#Menu:checked ~.BloqueR a{
+    display: flex;
+}
+#Menu:checked ~.BloqueR{
+    height: 8em;
+    width: 8em;
+    border-radius: 1em;
+}
+.BloqueRes{
+    display: none;
+}
+@media screen and (max-width:600px) {
+    .BloqueT{
+        display: none;
+    }
+    .BloqueRes{
+        display: block;
+    }
+}

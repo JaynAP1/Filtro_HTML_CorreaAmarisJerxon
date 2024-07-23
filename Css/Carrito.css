@@ -1,0 +1,174 @@
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+}
+body{
+    background-color: #4670DB;
+}
+.BloqueP{
+    display: flex;
+    justify-content: space-around;
+    background-color: #4670DB;
+    height: 100vh;
+}
+.BloqueP a{
+    text-decoration: none;
+}
+.BloqueT{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    width: 10em;
+    font-size: 1.2em;
+}
+.BloqueT h3{
+    font-size: 1.7em;
+}
+.CajaV{
+    display: flex;
+    flex-direction: column;
+    line-height: 3em;
+    margin: 9em 0em 9em 0em;
+}
+.AllT,.AllA,.AllC,.AllP{
+    display: flex;
+    align-items: center;
+}
+.Carrito{
+    background-color: white;
+    border-radius: 2em;
+    width: 40vw;
+}
+.Carrito a{
+    color:#4670DB;
+}
+.Carrito i{
+    color: #4670DB;
+}
+.All i,.AllA i,.AllT i,.AllC i,.AllP i {
+    transform: scale(1.5);
+}
+.Carrito{
+    display: flex;
+    align-items: center;
+    margin: 0 0 4em 0;
+    line-height: 3;
+}
+.BloqueO{
+    border-radius: 2em;
+    background-color: white;
+}
+.Title h3{
+    margin-left: 2em;
+    color:#4670DB;
+    font-size: 2em;
+}
+.AllObj{
+    background-color: rgb(255, 255, 255);
+    overflow:-moz-hidden-unscrollable;
+    gap: 4em;
+    width: 60vw;
+    border-radius: 2em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding: 2em;
+}
+.Obj1,.Obj2,.Obj3{
+    background-color: #4670DB;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 1.5em;
+    line-height: 2em;
+    text-align: center;
+    margin-bottom: 2em;
+}
+input{
+    display: none;
+}
+#Borrar1:checked ~.Obj1{
+    display: none;
+}
+#Borrar2:checked ~.Obj2{
+    display: none;
+}
+#Borrar3:checked ~.Obj3{
+    display: none;
+}
+.BloqueO i{
+    transform: scale(1.5);
+}
+img{
+    height: 5em;
+    width: 4em;
+    border-radius: 2em;
+}
+.NavIn{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.NavIn a{
+    background-color: #4670DB;
+    padding: 0.5em;
+    border-radius: 1em;
+    height: 1.2em;
+    width: 10em;
+    margin-bottom: 2em;
+}
+.Compra{
+    width: 20em;
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid black;
+    border-radius: 1em;
+    align-items: center;
+}
+.Compra p{
+    color: #4670DB;
+}
+.BloqueR{
+    position: absolute;
+    z-index: 2;
+    background-color: #4670DB;
+    display: flex;
+    flex-direction: column;
+    height: 0em;
+    line-height: 1.5em;
+    left: 1em;
+    top: 2em;
+}
+.BloqueR a{
+    display: none;
+}
+#Menu:checked ~.BloqueR a{
+    display: flex;
+}
+#Menu:checked ~.BloqueR{
+    height: 8em;
+    width: 8em;
+    border-radius: 1em;
+}
+
+.BloqueRes{
+    display: none;
+}
+@media screen and (max-width:600px) {
+    .BloqueT{
+        display: none;
+    }
+    .BloqueRes{
+        display: block;
+    }
+}
+@media screen and (max-width:1100px) {
+    .Text{
+        display: none;
+    }
+}
+@media screen and (max-width:700px) {
+    .Subtotal{
+        display: none;
+    }
+}

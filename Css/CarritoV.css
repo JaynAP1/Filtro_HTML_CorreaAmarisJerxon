@@ -1,0 +1,108 @@
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+}
+body{
+    background-color: #4670DB;
+}
+.BloqueP{
+    display: flex;
+    justify-content: space-around;
+    background-color: #4670DB;
+    height: 100vh;
+}
+.BloqueP a{
+    text-decoration: none;
+}
+.BloqueT{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    width: 10em;
+    font-size: 1.2em;
+}
+.BloqueT h3{
+    font-size: 1.7em;
+}
+.CajaV{
+    display: flex;
+    flex-direction: column;
+    line-height: 3em;
+    margin: 9em 0em 9em 0em;
+}
+.AllT,.AllA,.AllC,.AllP{
+    display: flex;
+    align-items: center;
+}
+.Carrito{
+    background-color: white;
+    border-radius: 2em;
+    width: 40vw;
+}
+.Carrito a{
+    color:#4670DB;
+}
+.Carrito i{
+    color: #4670DB;
+}
+.All i,.AllA i,.AllT i,.AllC i,.AllP i {
+    transform: scale(1.5);
+}
+.Carrito{
+    display: flex;
+    align-items: center;
+    margin: 0 0 4em 0;
+    line-height: 3;
+}
+.BloqueO{
+    background-color: rgb(255, 255, 255);
+    margin-top: 2em;
+    padding: 0em 2em 0 2em;
+    width: 60vw;
+    height: 50em;
+    border-radius: 2em;
+}
+.Title h3{
+    color:#4670DB;
+    font-size: 2em;
+}
+.BloqueO p{
+    color: #4670DB;
+}
+.BloqueR{
+    position: absolute;
+    z-index: 2;
+    background-color: #4670DB;
+    display: flex;
+    flex-direction: column;
+    height: 0em;
+    line-height: 1.5em;
+    left: 1em;
+    top: 2em;
+}
+input{
+    display: none;
+}
+.BloqueR a{
+    display: none;
+}
+#Menu:checked ~.BloqueR a{
+    display: flex;
+}
+#Menu:checked ~.BloqueR{
+    height: 8em;
+    width: 8em;
+    border-radius: 1em;
+}
+
+.BloqueRes{
+    display: none;
+}
+@media screen and (max-width:600px) {
+    .BloqueT{
+        display: none;
+    }
+    .BloqueRes{
+        display: block;
+    }
+}
