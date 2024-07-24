@@ -98,6 +98,9 @@ input{
 .BloqueRes{
     display: none;
 }
+.BloqueRes i{
+    transform: scale(1.5);
+}
 @media screen and (max-width:600px) {
     .BloqueT{
         display: none;

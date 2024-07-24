@@ -65,7 +65,6 @@ body{
 }
 .AllObj{
     background-color: rgb(255, 255, 255);
-    overflow:-moz-hidden-unscrollable;
     gap: 4em;
     width: 60vw;
     border-radius: 2em;
@@ -121,9 +120,9 @@ img{
     width: 20em;
     display: flex;
     justify-content: space-evenly;
+    align-items: baseline;
     border: 1px solid black;
     border-radius: 1em;
-    align-items: center;
 }
 .Compra p{
     color: #4670DB;
@@ -153,6 +152,9 @@ img{
 
 .BloqueRes{
     display: none;
+}
+.BloqueRes i{
+    transform: scale(1.5);
 }
 @media screen and (max-width:600px) {
     .BloqueT{
